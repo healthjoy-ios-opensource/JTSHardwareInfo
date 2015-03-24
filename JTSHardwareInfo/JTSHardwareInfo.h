@@ -13,7 +13,7 @@
 @interface JTSHardwareInfo : NSObject
 
 typedef NS_ENUM(NSInteger, JTSHardwareFamily) {
-    JTSHardwareFamily_Unknown,
+    JTSHardwareFamily_Unknown = 0,
     JTSHardwareFamily_iPhone,
     JTSHardwareFamily_iPad,
     JTSHardwareFamily_iPodTouch,
@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, JTSHardwareFamily) {
 
 typedef NS_ENUM(NSInteger, JTSHardwareType) {
     
-    JTSHardwareType_NotAvailable,
+    JTSHardwareType_NotAvailable = 0,
     JTSHardwareType_Simulator,
     
     JTSHardwareType_iPhone_Unreleased,
