@@ -14,7 +14,7 @@
 		47B60B4419DCC6D2009E3466 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47B60B4319DCC6D2009E3466 /* Images.xcassets */; };
 		47B60B4719DCC6D2009E3466 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B60B4519DCC6D2009E3466 /* LaunchScreen.xib */; };
 		47B60B5319DCC6D2009E3466 /* JTSHardwareInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B60B5219DCC6D2009E3466 /* JTSHardwareInfoTests.m */; };
-		47B60B6219DCC768009E3466 /* JTSHardwareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B60B6119DCC768009E3466 /* JTSHardwareInfo.m */; };
+		7E033A351AC18A5D006A490F /* libJTSHardwareInfo-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E033A341AC18A51006A490F /* libJTSHardwareInfo-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +24,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 47B60B3219DCC6D2009E3466;
 			remoteInfo = JTSHardwareInfo;
+		};
+		7E033A331AC18A51006A490F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E033A2F1AC18A51006A490F /* JTSHardwareInfo-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E033A0F1AC189A8006A490F;
+			remoteInfo = "JTSHardwareInfo-iOS";
+		};
+		7E033A361AC18A60006A490F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E033A2F1AC18A51006A490F /* JTSHardwareInfo-iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E033A0E1AC189A8006A490F;
+			remoteInfo = "JTSHardwareInfo-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,8 +55,7 @@
 		47B60B4C19DCC6D2009E3466 /* JTSHardwareInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTSHardwareInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B60B5119DCC6D2009E3466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47B60B5219DCC6D2009E3466 /* JTSHardwareInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSHardwareInfoTests.m; sourceTree = "<group>"; };
-		47B60B6019DCC768009E3466 /* JTSHardwareInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTSHardwareInfo.h; path = ../Source/JTSHardwareInfo.h; sourceTree = "<group>"; };
-		47B60B6119DCC768009E3466 /* JTSHardwareInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTSHardwareInfo.m; path = ../Source/JTSHardwareInfo.m; sourceTree = "<group>"; };
+		7E033A2F1AC18A51006A490F /* JTSHardwareInfo-iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "JTSHardwareInfo-iOS.xcodeproj"; path = "../JTSHardwareInfo-iOS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E033A351AC18A5D006A490F /* libJTSHardwareInfo-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +80,7 @@
 		47B60B2A19DCC6D2009E3466 = {
 			isa = PBXGroup;
 			children = (
-				47B60B5C19DCC724009E3466 /* Source */,
+				7E033A2F1AC18A51006A490F /* JTSHardwareInfo-iOS.xcodeproj */,
 				47B60B3519DCC6D2009E3466 /* Sample App */,
 				47B60B3419DCC6D2009E3466 /* Products */,
 			);
@@ -124,13 +138,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		47B60B5C19DCC724009E3466 /* Source */ = {
+		7E033A301AC18A51006A490F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47B60B6019DCC768009E3466 /* JTSHardwareInfo.h */,
-				47B60B6119DCC768009E3466 /* JTSHardwareInfo.m */,
+				7E033A341AC18A51006A490F /* libJTSHardwareInfo-iOS.a */,
 			);
-			name = Source;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +160,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7E033A371AC18A60006A490F /* PBXTargetDependency */,
 			);
 			name = JTSHardwareInfo;
 			productName = JTSHardwareInfo;
@@ -200,6 +214,12 @@
 			mainGroup = 47B60B2A19DCC6D2009E3466;
 			productRefGroup = 47B60B3419DCC6D2009E3466 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7E033A301AC18A51006A490F /* Products */;
+					ProjectRef = 7E033A2F1AC18A51006A490F /* JTSHardwareInfo-iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				47B60B3219DCC6D2009E3466 /* JTSHardwareInfo */,
@@ -207,6 +227,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7E033A341AC18A51006A490F /* libJTSHardwareInfo-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libJTSHardwareInfo-iOS.a";
+			remoteRef = 7E033A331AC18A51006A490F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		47B60B3119DCC6D2009E3466 /* Resources */ = {
@@ -236,7 +266,6 @@
 				47B60B3F19DCC6D2009E3466 /* ViewController.m in Sources */,
 				47B60B3C19DCC6D2009E3466 /* AppDelegate.m in Sources */,
 				47B60B3919DCC6D2009E3466 /* main.m in Sources */,
-				47B60B6219DCC768009E3466 /* JTSHardwareInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +284,11 @@
 			isa = PBXTargetDependency;
 			target = 47B60B3219DCC6D2009E3466 /* JTSHardwareInfo */;
 			targetProxy = 47B60B4D19DCC6D2009E3466 /* PBXContainerItemProxy */;
+		};
+		7E033A371AC18A60006A490F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JTSHardwareInfo-iOS";
+			targetProxy = 7E033A361AC18A60006A490F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -312,6 +346,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					..,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,6 +387,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					..,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
