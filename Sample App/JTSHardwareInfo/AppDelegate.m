@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "JTSHardwareInfo.h"
+#import <JTSHardwareInfo/JTSHardwareInfo.h>
 
 @interface AppDelegate ()
 
