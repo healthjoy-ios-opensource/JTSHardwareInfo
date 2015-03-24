@@ -8,7 +8,7 @@
 //  Originally based on code by InderKumarRathmore at https://github.com/InderKumarRathore/UIDevice-Hardware
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface JTSHardwareInfo : NSObject
 
